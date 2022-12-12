@@ -44,6 +44,7 @@ CSS Reset (Reference from Kevin Powell CSS reset
 body {
   min-height: 100vh;
   font-family: 'Barlow', sans-serif;
+  color: hsl(212, 27%, 19%);
 }
 
 /* responsive images/videos */
@@ -63,6 +64,7 @@ h1,
 h2,
 h3 {
   font-family: 'Fraunces', serif;
+  font-weight: 900;
 }
 
 a {
@@ -74,6 +76,9 @@ li {
   list-style: none;
 }
 
+.hamburger-menu-path {
+  fill: white;
+}
 /* ===================
 navbar styling
 ======================*/
@@ -81,24 +86,34 @@ navbar styling
 header {
   display: flex;
   flex-direction: column;
-  background-color: lightblue;
+  background-image: url("./images/mobile/image-header.jpg");
+  background-position: bottom; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height: 64vh;
+}
+
+.arrow-down {
+  align-self: center;
+  margin-top: 2em;
 }
 
 .logo {
   color: white;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .top-navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .top-navbar__hamburger-menu {
   background-color: inherit;
+  color: white;
   border: none;
   cursor: pointer;
 }
@@ -107,7 +122,60 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   color: white;
-  padding: 2em 0.5em;
-  font-size: 1.5rem;
+  padding: 1.5em 0.5em 0.5em;
+  font-size: 2.1rem;
   text-align: center;
 }
+
+
+/* ===================
+info styling
+======================*/
+.info__content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+}
+
+.info__h2 {
+  font-size: 1.7rem;
+  padding: 1em;
+}
+
+.info__p {
+  color: hsl(213, 9%, 39%);
+  line-height: 1.5;
+}
+
+.info__a {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 2em;
+  color: inherit;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.info__graphic-design{
+  color: hsl(167, 40%, 24%);
+  background-image: url("./images/mobile/image-graphic-design.jpg");
+  background-position: top; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height: 80vh;
+}
+
+.info__p {
+  text-align: center;
+  color: inherit;
+  padding: 0em 0.7em 3em 0.7em;
+}
+
