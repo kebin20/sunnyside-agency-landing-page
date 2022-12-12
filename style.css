@@ -21,6 +21,7 @@ CSS Reset (Reference from Kevin Powell CSS reset
 /* makes sizing simpler */
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
 
 *,
 *::before,
@@ -35,6 +36,7 @@ CSS Reset (Reference from Kevin Powell CSS reset
   margin: 0;
   padding: 0;
   font: inherit;
+  font-size: 18px;
 }
 
 /* min body height */
@@ -53,26 +55,59 @@ video {
   max-width: 100%;
 }
 
+/* ===================
+General Layout
+======================*/
+
 h1,
 h2,
 h3 {
   font-family: 'Fraunces', serif;
 }
 
-h1 {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-
 a {
   text-decoration: none;
+  
+}
+
+li {
+  list-style: none;
 }
 
 /* ===================
 navbar styling
 ======================*/
 
-.top-navbar {
+header {
   display: flex;
+  flex-direction: column;
+  background-color: lightblue;
 }
 
+.logo {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.top-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.top-navbar__hamburger-menu {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.top-navbar__h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: white;
+  padding: 2em 0.5em;
+  font-size: 1.5rem;
+  text-align: center;
+}
