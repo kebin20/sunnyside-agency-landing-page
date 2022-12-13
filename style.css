@@ -79,6 +79,14 @@ li {
 .hamburger-menu-path {
   fill: white;
 }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /* ===================
 navbar styling
 ======================*/
@@ -131,12 +139,8 @@ header {
 /* ===================
 info styling
 ======================*/
-.info__content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2em;
+.info {
+  padding: 0;
 }
 
 .info__h2 {
@@ -146,7 +150,10 @@ info styling
 
 .info__p {
   color: hsl(213, 9%, 39%);
+  text-align: center;
+  padding: 2em;
   line-height: 1.5;
+  margin-bottom: 1.5em;
 }
 
 .info__a {
@@ -158,24 +165,89 @@ info styling
 }
 
 .img-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-position: top; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height: 80vh;
   justify-content: flex-end;
 }
 
 .info__graphic-design{
   color: hsl(167, 40%, 24%);
   background-image: url("./images/mobile/image-graphic-design.jpg");
-  background-position: top; 
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  height: 80vh;
 }
 
-.info__p {
+.info__photography {
+  color: hsl(198, 62%, 26%);
+  background-image: url("./images/mobile/image-photography.jpg");
+}
+
+/* ===================
+testimonials
+======================*/
+
+.testimonials__h3 {
+  padding: 1.5em 0.5em 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: hsl(210, 4%, 67%);
+  font-size: 0.8rem;
+}
+
+.client {
+  padding-bottom: 1em;
+}
+
+.client__p{
   text-align: center;
-  color: inherit;
-  padding: 0em 0.7em 3em 0.7em;
+  padding: 1em;
+  line-height: 1.5;
 }
 
+.client-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  padding: 1em;
+}
+
+.client-position {
+  color: hsl(210, 4%, 67%);
+}
+
+/* ===================
+marketing images styling
+======================*/
+
+.marketing-img-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ===================
+footer
+======================*/
+
+footer {
+  background-color: hsl(168, 34%, 41%);
+}
+
+.footer-logo {
+  color: hsl(167, 40%, 24%);
+  font-weight: 700;
+  font-size: 1.7rem;
+  padding: 1em;
+}
+
+.footer-list {
+  display: flex;
+  padding: 0.5em;
+}
+
+.footer-item {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.footer-item > a{
+  color: hsl(167, 40%, 24%);;
+}
