@@ -357,8 +357,10 @@ footer {
 
   .info-container {
     display: grid;
+    width: 100%;
+    height: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 0.5fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .info.flex {
