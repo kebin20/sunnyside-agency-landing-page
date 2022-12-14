@@ -53,6 +53,8 @@ svg,
 video {
   display: block;
   max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* ===================
@@ -263,10 +265,10 @@ testimonials
 }
 
 /* ===================
-marketing images styling
+gallery images styling
 ======================*/
 
-.marketing-img-row {
+.gallery-img-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -380,6 +382,14 @@ footer {
  {
   padding: 0;
   text-align: left;
+}
+
+.info__graphic-design {
+  background-image: url('./images/desktop/image-graphic-design.jpg');
+}
+
+.info__photography {
+  background-image: url('./images/desktop/image-photography.jpg');
 }
 
 }
