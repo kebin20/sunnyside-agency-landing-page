@@ -59,7 +59,7 @@
     </header>
 
     <main>
-      <section class="info">
+      <section class="info-container">
         <picture class="hero-image-container">
           <source
             srcset="./images/desktop/image-transform.jpg"
@@ -158,10 +158,38 @@
       </section>
 
       <section class="marketing-img-row">
-        <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="picture of milk" class="marketing-img" />
-        <img src="./images/mobile/image-gallery-orange.jpg" alt="picture of orange on a plate" class="marketing-img" />
-        <img src="./images/mobile/image-gallery-cone.jpg" alt="picture of a cone" class="marketing-img" />
+        <picture class="marketing-img">
+          <source
+            srcset="./images/desktop/image-gallery-milkbottles.jpg"
+            media="(min-width: 600px)"
+          />
+        <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="picture of milk"/>
+        </picture>
+
+        <picture class="marketing-img">
+          <source
+            srcset="./images/desktop/image-gallery-orange.jpg"
+            media="(min-width: 600px)"
+          />
+        <img src="./images/mobile/image-gallery-orange.jpg" alt="picture of orange on a plate"/>
+      </picture>
+      
+      <picture class="marketing-img">
+        <source
+          srcset="./images/desktop/image-gallery-cone.jpg"
+          media="(min-width: 600px)"
+        />
+        <img src="./images/mobile/image-gallery-cone.jpg" alt="picture of a cone"/>
+      </picture>
+
+      <picture class="marketing-img">
+        <source
+          srcset="./images/desktop/mage-gallery-sugar-cubes.jpg"
+          media="(min-width: 600px)"
+        />
         <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="picture of sugar cubes" class="marketing-img" />
+      </picture>
+
       </section>
     </main>
 

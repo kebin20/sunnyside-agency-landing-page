@@ -22,7 +22,7 @@ CSS Reset (Reference from Kevin Powell CSS reset
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&display=swap');
-</style > *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -147,8 +147,17 @@ header {
   padding: 2em;
 }
 
-.nav-item {
-  padding: 0.5em;
+.nav-item > a{
+  color: white;
+}
+
+.nav-item.active > a {
+  color: hsl(212, 27%, 19%);
+  background-color: white;
+  border-radius: 2em;
+  padding: 0.8em 1.9em;
+  font-family: 'Fraunces';
+  text-transform: uppercase;
 }
 
 /* ===================
@@ -306,4 +315,69 @@ footer {
 }
 
 @media (min-width: 600px) {
+  header {
+    display: flex;
+    background-image: url('./images/desktop/image-header.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 81vh;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+}
+
+.nav-links {
+  position: relative;
+  display: flex;
+  padding: 0;
+  background: 0;
+}
+
+.nav-item {
+  padding: 0.8em 1em;
+}
+
+  .nav-menu {
+    display: flex;
+    padding: 0;
+    background: none;
+}
+
+  .top-navbar__h1 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    padding: 1.5em;
+  }
+
+  .arrow-down {
+    margin-top: 1.6em;
+  }
+
+  .info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 0.5fr);
+}
+
+.info.flex {
+  align-items: flex-start;
+  padding: 5em;
+  padding-right: 10em;
+}
+
+.info__h2 {
+  font-size: 2.3rem;
+}
+
+.info__h2,
+.transform__p,
+.stand-out__p,
+.info__a
+ {
+  padding: 0;
+  text-align: left;
+}
+
 }
