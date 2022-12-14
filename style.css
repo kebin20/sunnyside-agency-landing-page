@@ -21,7 +21,8 @@ CSS Reset (Reference from Kevin Powell CSS reset
 /* makes sizing simpler */
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&display=swap');
+</style>
 
 *,
 *::before,
@@ -258,12 +259,12 @@ footer
 ======================*/
 
 footer {
-  background-color: hsl(168deg 54% 68%)
+  background-color: hsl(168deg 54% 68% / 67%)
 }
 
 .footer-logo {
   color: hsl(167, 40%, 24%);
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.7rem;
   padding: 2em 1em 1em 1em;
 }
