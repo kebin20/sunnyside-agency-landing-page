@@ -133,6 +133,23 @@ header {
   cursor: pointer;
 }
 
+.nav-links:before {
+  content: '';
+  position: absolute;
+  bottom: 99.5%;
+  left: 89.6%;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-right: 33.1px solid white;
+  border-bottom: 35px solid transparent;
+  rotate: 90deg;
+}
+
+.nav-links {
+  display: none;
+}
+
 .top-navbar__h1 {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -161,12 +178,15 @@ li.nav-item {
   text-align: center;
 }
 
+.active {
+  margin-top: 1em;
+}
+
 .nav-item.active > a {
   color: hsl(212, 27%, 19%);
   background-color: hsl(51, 100%, 49%);
   border-radius: 2em;
   padding: 1em 1.5em;
-  margin-top: 1em;
   font-family: 'Fraunces';
   text-transform: uppercase;
 }
@@ -203,6 +223,30 @@ info styling
   text-transform: uppercase;
   padding: 1em 2em 4em 2em;
   color: inherit;
+}
+
+.transform__a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  height: 8px;
+  background: hsl(51, 100%, 49%);
+  margin-top: -8px;
+  margin-left: 0px;
+  padding: 0px 4em 0px 4em;
+}
+
+.standout__a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  height: 8px;
+  background: hsl(7, 99%, 70%);
+  margin-top: -8px;
+  margin-left: 0px;
+  padding: 0px 4em 0px 4em;
 }
 
 .img-container {
@@ -273,6 +317,11 @@ testimonials
   font-size: 0.9rem;
 }
 
+.social-link:hover,
+.footer-item:hover {
+  color: white;
+}
+
 /* ===================
 gallery images styling
 ======================*/
@@ -303,12 +352,9 @@ footer {
 }
 
 .footer-item {
+  color: hsl(167, 40%, 24%);
   padding-left: 1em;
   padding-right: 1em;
-}
-
-.footer-item > a {
-  color: hsl(167, 40%, 24%);
 }
 
 .social-list {
@@ -350,6 +396,10 @@ footer {
     padding: 0.8em 1em;
   }
 
+  .top-navbar__hamburger-menu {
+    display: none;
+  }
+  
   .nav-menu {
     display: flex;
     padding: 0;
