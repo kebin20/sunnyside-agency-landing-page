@@ -49,7 +49,6 @@ body {
 /* responsive images/videos */
 img,
 picture,
-svg,
 video {
   display: block;
   max-width: 100%;
@@ -145,19 +144,20 @@ header {
 
 .nav-links {
   position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
   background-color: white;
-  padding: 2em;
 }
 
-.nav-item > a{
-  color: white;
+.nav-item > * {
+  color: hsl(232, 10%, 55%);
 }
 
 .nav-item.active > a {
   color: hsl(212, 27%, 19%);
-  background-color: white;
+  background-color: hsl(51, 100%, 49%);
   border-radius: 2em;
-  padding: 0.8em 1.9em;
+  padding: 1em 1.5em;
   font-family: 'Fraunces';
   text-transform: uppercase;
 }
@@ -328,24 +328,24 @@ footer {
 
   .logo {
     font-size: 1.8rem;
-}
+  }
 
-.nav-links {
-  position: relative;
-  display: flex;
-  padding: 0;
-  background: 0;
-}
+  .nav-links {
+    position: relative;
+    display: flex;
+    padding: 0;
+    background: 0;
+  }
 
-.nav-item {
-  padding: 0.8em 1em;
-}
+  .nav-item {
+    padding: 0.8em 1em;
+  }
 
   .nav-menu {
     display: flex;
     padding: 0;
     background: none;
-}
+  }
 
   .top-navbar__h1 {
     font-size: 3rem;
@@ -363,33 +363,31 @@ footer {
     height: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-}
+  }
 
-.info.flex {
-  align-items: flex-start;
-  padding: 5em;
-  padding-right: 10em;
-}
+  .info.flex {
+    align-items: flex-start;
+    padding: 5em;
+    padding-right: 10em;
+  }
 
-.info__h2 {
-  font-size: 2.3rem;
-}
+  .info__h2 {
+    font-size: 2.3rem;
+  }
 
-.info__h2,
-.transform__p,
-.stand-out__p,
-.info__a
- {
-  padding: 0;
-  text-align: left;
-}
+  .info__h2,
+  .transform__p,
+  .stand-out__p,
+  .info__a {
+    padding: 0;
+    text-align: left;
+  }
 
-.info__graphic-design {
-  background-image: url('./images/desktop/image-graphic-design.jpg');
-}
+  .info__graphic-design {
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+  }
 
-.info__photography {
-  background-image: url('./images/desktop/image-photography.jpg');
-}
-
+  .info__photography {
+    background-image: url('./images/desktop/image-photography.jpg');
+  }
 }
