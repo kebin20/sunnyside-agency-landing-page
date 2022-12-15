@@ -449,4 +449,13 @@ footer {
   .info__photography {
     background-image: url('./images/desktop/image-photography.jpg');
   }
+
+  .client-container.flex {
+    flex-direction: row;
+    padding: 1em 6em 6em;
+}
+
+section.gallery-img-container {
+  grid-template-columns: repeat(4,1fr);
+}
 }
