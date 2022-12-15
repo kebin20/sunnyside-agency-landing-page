@@ -110,7 +110,7 @@ header {
 
 .arrow-down {
   align-self: center;
-  margin-top: 2em;
+  margin-top: 0.5em;
 }
 
 .logo {
@@ -137,7 +137,7 @@ header {
   content: '';
   position: absolute;
   bottom: 99.5%;
-  left: 89.6%;
+  left: 89.5%;
   width: 0;
   height: 0;
   border-top: 0px solid transparent;
@@ -173,7 +173,7 @@ header {
   color: hsl(232, 10%, 55%);
 }
 
-li.nav-item {
+.nav-item {
   padding: 1em 5em 1em 5em;
   text-align: center;
 }
@@ -390,16 +390,23 @@ footer {
     display: flex;
     padding: 0;
     background: 0;
+    top: 0;
+    left: 0;
+    transform: none;
   }
 
-  .nav-item {
-    padding: 0.8em 1em;
+  .nav-links:before {
+    display: none;
+  }
+
+  li.nav-item {
+    padding: 1.5em;
   }
 
   .top-navbar__hamburger-menu {
     display: none;
   }
-  
+
   .nav-menu {
     display: flex;
     padding: 0;
@@ -424,6 +431,13 @@ footer {
     grid-template-rows: repeat(3, 1fr);
   }
 
+  .transform__picture {
+    grid-column: 2/3;
+  }
+  .transform__div {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
   .info.flex {
     align-items: flex-start;
     padding: 5em;
@@ -453,9 +467,9 @@ footer {
   .client-container.flex {
     flex-direction: row;
     padding: 1em 6em 6em;
-}
+  }
 
-section.gallery-img-container {
-  grid-template-columns: repeat(4,1fr);
-}
+  section.gallery-img-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
