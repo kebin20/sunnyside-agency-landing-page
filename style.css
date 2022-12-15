@@ -143,6 +143,8 @@ header {
 }
 
 .nav-links {
+  padding-top: 1em;
+  padding-bottom: 2em;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -153,11 +155,17 @@ header {
   color: hsl(232, 10%, 55%);
 }
 
+li.nav-item {
+  padding: 1em 5em 1em 5em;
+  text-align: center;
+}
+
 .nav-item.active > a {
   color: hsl(212, 27%, 19%);
   background-color: hsl(51, 100%, 49%);
   border-radius: 2em;
   padding: 1em 1.5em;
+  margin-top: 1em;
   font-family: 'Fraunces';
   text-transform: uppercase;
 }
