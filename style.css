@@ -417,7 +417,11 @@ footer {
   .top-navbar {
     align-items: center;
     padding: 0em;
-}
+  }
+
+  .active {
+    margin-top: 0em;
+  }
 
   .top-navbar__h1 {
     font-size: 3rem;
