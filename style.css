@@ -133,7 +133,7 @@ header {
   cursor: pointer;
 }
 
-.nav-links:before {
+.nav-links::before {
   content: '';
   position: absolute;
   bottom: 99.5%;
