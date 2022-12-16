@@ -429,6 +429,10 @@ HEADER & NAVBAR STYLING
     margin-top: 0em;
   }
 
+  .nav-item.active > a {
+    background-color: white;
+  }
+
   .nav-item.active > a:hover {
     color: white;
     background-color: hsl(206, 100%, 80%);
@@ -466,7 +470,6 @@ INFO STYLING
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 5em;
-    padding-right: 1em;
   }
 
   .info__h2 {
@@ -494,11 +497,19 @@ INFO STYLING
   }
 
   /* ===================
-CLIENT STYLING
+CLIENT TESTIMONIALS STYLING
 ======================*/
+  .testimonials {
+    padding: 7em 3em 3em 3em;
+  }
+
+  .testimonials__h3 {
+    padding: 1.5em 0em 4em 0em;
+  }
+
   .client-container.flex {
     flex-direction: row;
-    padding: 1em 6em 6em;
+    padding: 0;
   }
 
   /* ===================
