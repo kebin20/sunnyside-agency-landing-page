@@ -371,7 +371,6 @@ footer {
 }
 
 @media (min-width: 600px) {
-
   /* ===================
 HEADER & NAVBAR STYLING
 ======================*/
@@ -404,6 +403,10 @@ HEADER & NAVBAR STYLING
 
   li.nav-item {
     padding: 1.5em;
+  }
+
+  .nav-item > * {
+    color: white;
   }
 
   .top-navbar__hamburger-menu {
@@ -441,7 +444,7 @@ HEADER & NAVBAR STYLING
     margin-top: 1.6em;
   }
 
-    /* ===================
+  /* ===================
 INFO STYLING
 ======================*/
   .info-container {
@@ -490,7 +493,7 @@ INFO STYLING
     background-image: url('./images/desktop/image-photography.jpg');
   }
 
-    /* ===================
+  /* ===================
 CLIENT STYLING
 ======================*/
   .client-container.flex {
@@ -498,7 +501,7 @@ CLIENT STYLING
     padding: 1em 6em 6em;
   }
 
-    /* ===================
+  /* ===================
 IMAGE GALLERY STYLING
 ======================*/
   section.gallery-img-container {
