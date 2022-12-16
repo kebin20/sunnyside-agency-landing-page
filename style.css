@@ -409,9 +409,15 @@ footer {
 
   .nav-menu {
     display: flex;
+    align-items: center;
     padding: 0;
     background: none;
   }
+
+  .top-navbar {
+    align-items: center;
+    padding: 0em;
+}
 
   .top-navbar__h1 {
     font-size: 3rem;
@@ -440,8 +446,9 @@ footer {
   }
   .info.flex {
     align-items: flex-start;
+    justify-content: space-between;
     padding: 5em;
-    padding-right: 10em;
+    padding-right: 1em;
   }
 
   .info__h2 {
