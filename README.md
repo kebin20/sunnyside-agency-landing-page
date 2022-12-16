@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/kebin20/sunnyside-agency-landing-page)
+- Live Site URL: [sunnyside-agency-landing-page](https://kebin20.github.io/sunnyside-agency-landing-page/)
 
 ## My process
 
